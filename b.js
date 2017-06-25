@@ -24,6 +24,8 @@ function b() {
 		} catch (ex) {}
 		try {
 			document.querySelectorAll(".product-logo")[0].innerHTML = "<img id='gl4' src='" + c.GoogolURL + "'>";
+			a('gl4').style.maxWidth = '105px';
+			a('gl4').style.maxHeight = '34px';
 		} catch (ex) {}
 		try {
 			document.querySelectorAll(".logo")[0].src = c.GoogolURL;
