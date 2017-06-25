@@ -1,5 +1,5 @@
 chrome.storage.sync.get("GoogolURL", function(e){
-	function id(id) { return document.getElementById(id) }
+function id(id) { return document.getElementById(id) }
 function load() {
 	chrome.storage.sync.get("GoogolURL", function(obj){
 		try {
