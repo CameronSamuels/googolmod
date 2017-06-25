@@ -19,7 +19,7 @@ function b() {
 		} catch (ex) {}
 		try {
 			a("logo").innerHTML = "<img id='gl3' src='" + c.GoogolURL + "'>";
-			a('gl3').style.width = "198px";
+			a('gl3').style.width = "114px";
 			a('gl3').style.height = "37px";
 		} catch (ex) {}
 		try {
