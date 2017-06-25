@@ -1,4 +1,3 @@
-chrome.storage.sync.get("GoogolURL", function(e){
 function a(d) { return document.getElementById(d) }
 function b() {
 	chrome.storage.sync.get("GoogolURL", function(c){
@@ -29,4 +28,3 @@ function b() {
 	});
 }
 b();
-});
