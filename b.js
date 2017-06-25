@@ -8,7 +8,7 @@ function b() {
 		} catch (ex) {}
 		try {
 			a('hplogo').src = c.GoogolURL;
-			a('hplogo').setAttribute('srcset', "");
+			a('hplogo').removeAttribute('srcset');
 			a('hplogo').style.width = "340px";
 			a('hplogo').style.height = "110px";
 		} catch (ex) {}
@@ -21,6 +21,9 @@ function b() {
 			a("logo").innerHTML = "<img id='gl3' src='" + c.GoogolURL + "'>";
 			a('gl3').style.width = "114px";
 			a('gl3').style.height = "37px";
+		} catch (ex) {}
+		try {
+			document.querySelectorAll(".product-logo")[0].innerHTML = "<img id='gl4' src='" + c.GoogolURL + "'>";
 		} catch (ex) {}
 		try {
 			document.querySelectorAll(".logo")[0].src = c.GoogolURL;
