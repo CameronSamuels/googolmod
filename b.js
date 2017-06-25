@@ -19,6 +19,11 @@ function b() {
 			id('gl2').style.height = "55px";
 		} catch (ex) {}
 		try {
+			id("logo").innerHTML = "<img id='gl3' src='" + c.GoogolURL + "' />";
+			id('gl3').style.width = "198px";
+			id('gl3').style.height = "37px";
+		} catch (ex) {}
+		try {
 			document.querySelectorAll(".logo")[0].src = c.GoogolURL;
 		} catch (ex) {}
 	});
