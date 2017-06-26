@@ -1,4 +1,5 @@
 function a(d) { return document.getElementById(d) }
+var u;
 function b() {
 	chrome.storage.sync.get("GoogolURL", function(c){
 		u = c.GoogolURL;
@@ -34,17 +35,12 @@ function b() {
 	});
 }
 b();
-var clickedEl = null;
-
-document.addEventListener("mousedown", function(event){
-    //right click
-    if(event.button == 2) { 
-        clickedEl = event.target;
-    }
+var clk = null;
+document.addEventListener("mousedown", function(e){
+    if(e.button == 2) clk = e.target;
 }, true);
-
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     if(request == "getClickedEl") {
-        sendResponse({value: clickedEl.value});
+        sendResponse({value: clk});
     }
 });
