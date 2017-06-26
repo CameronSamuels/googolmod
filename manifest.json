@@ -1,3 +1,3 @@
 {"manifest_version":2,"name":"Googol Modifier","version":"2.0",
-"description":"Change Google's logo to anything you want","content_scripts":[{"js":["b.js"],"matches":["https://*.google.com/*"]}],
+"description":"Change Google's logo to anything you want","content_scripts":[{"js":["js/b.js"],"matches":["https://*.google.com/*"]}],
 "browser_action":{"default_popup":"a.html"},"permissions":["storage"]}
