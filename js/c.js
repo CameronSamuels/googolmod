@@ -34,13 +34,4 @@ function b() {
 	} catch (ex) {}
 	});
 }
-b();
-var clk = null;
-document.addEventListener("mousedown", function(e){
-    if(e.button == 2) clk = e.target;
-}, true);
-chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-    if(request == "getClickedEl") {
-        sendResponse({value: clk});
-    }
-});
+b()
