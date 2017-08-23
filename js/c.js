@@ -1,7 +1,7 @@
 function a(d) { return document.querySelector(d) }
 function b() {
 	chrome.storage.sync.get("a", function(c) {
-		var u = c.a;
+		var u = c.a || "https://i.imgur.com/QBuodTI.jpg";
 		try {
 			a('#logocont').innerHTML = "<img id=gl1 src='" + u + "'>",
 			a('#gl1').style.width = "85px",
