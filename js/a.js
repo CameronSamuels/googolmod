@@ -1,1 +1,1 @@
-function a(o){return document.querySelector(o)}function b(){chrome.storage.sync.set({GoogolURL:a("input").value}),a("img").src=a("input").value}chrome.storage.sync.get("GoogolURL",function(o){a("input").value=o.GoogolURL,a("img").src=o.GoogolURL}),a("div").onclick=b
+function a(o){return document.querySelector(o)}function b(){chrome.storage.sync.set({a:a("input").value}),a("img").src=a("input").value}chrome.storage.sync.get("a",function(o){a("input").value=o.a,a("img").src=o.a}),a("div").onclick=b,document.oncontextmenu=function(e){e.preventDefault()}
